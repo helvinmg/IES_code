@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1 id="myh1">JS is awesome</h1>
+    <script>
+        //target the element
+        let ele=document.getElementById("myh1")
+        //display h1 in console
+        console.log("full element",ele);
+        //display content of h1
+        console.log("content",ele.textContent);
+        //update the content
+        ele.textContent="changed from JS"
+        //update content with tags in it
+        ele.innerHTML="<u>changed from JS</u>"
+    </script>
+</body>
+</html>
