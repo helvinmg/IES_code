@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <button onclick="test()">click me</button>
+    <p id="mypara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam recusandae, at dolorum quasi illum mollitia magni</p>
+    <button onclick="change()">change my content</button>
+    <script>
+        const test=()=>alert("button clicked")
+        let para=document.getElementById("mypara")
+        let change=()=>para.textContent="content changed"
+    </script>
+</body>
+</html>
