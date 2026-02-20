@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="page" onresize="changeBgColor()">
+    <h1>Event Handling</h1>
+    <p id="para" ondblclick="makeCaps()" onmouseover="changeColor()">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi voluptates adipisci pariatur ea dolor maxime vero perferendis cum aliquid tempora ipsum, totam voluptate, voluptatum error, nemo ut incidunt magnam necessitatibus!</p>
+    <script>
+        const changeBgColor=()=>
+        {
+            document.getElementById("page").style.backgroundColor="yellow"
+        }
+        const makeCaps=()=>{
+            document.getElementById("para").style.textTransform="uppercase"
+        }
+    </script>
+</body>
+</html>

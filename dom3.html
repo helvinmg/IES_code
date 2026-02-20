@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <h1>Welcome to DOM Manipulation</h1>
+    <h2 id="myh2" onmouseover="changeBg()">This is a heading in the DOM</h2>
+    <h1>third h1</h1>
+    <script>
+        let eles=document.getElementsByTagName("h1")
+        console.log(eles);
+        eles[0].textContent="newcontent"
+        eles[2].style.color="red"
+        //let item=document.getElementById("myh2")
+        let changeBg=()=>
+        {
+        let item=document.querySelector("#myh2")
+        item.style.backgroundColor="yellow"
+        }
+    </script>
+</body>
+</html>
